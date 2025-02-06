@@ -14,19 +14,26 @@
         <h1>AI Code Generator</h1>
       </header>
       <main>
-        <form id="code-generator-form">
-          <input
-            type="text"
-            placeholder="enter the question you want a code for"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="code" id="code"></div>
+        <div class="form-container">
+          <form id="code-generator-form">
+            <input
+              type="text"
+              placeholder="enter the language and question you want a code for"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">
+            i.e:python code to add numbers,java code to display hello or a C
+            code for a times table
+          </div>
+        </div>
+
+        <div class="code hidden" id="code"></div>
       </main>
       <footer>
         This AI project was coded by
